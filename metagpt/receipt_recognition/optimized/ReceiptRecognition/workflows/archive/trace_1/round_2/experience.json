@@ -1,0 +1,7 @@
+{
+    "father node": 1,
+    "modification": "1. Add filtering mechanism for non-receipt pages - The current graph sometimes includes non-receipt pages or empty items in output\n2. Add verification step for more accurate receipt page detection using metadata\n3. Improve the receipt continuity detection logic with more context\n4. Add error handling and validation steps\n5. Implement a cleaner method to post-process results before returning\n6. Modify the prompt to provide more detailed instructions for better page recognition\n7. Add specialized filtering for cover pages and summary pages that are incorrectly classified as receipts\n8. Implement a confidence score for receipt detection\n9. Create a post-processing function to clean the final output",
+    "before": 0.03529411764705882,
+    "after": 0.1411764705882353,
+    "succeed": true
+}

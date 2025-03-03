@@ -1,0 +1,34 @@
+{
+    "Custom": {
+        "description": "Generates anything based on customized input and instruction.",
+        "interface": "custom(input: str, instruction: str) -> dict with key 'response' of type str"
+    },
+    "ScEnsemble": {
+        "description": "Uses self-consistency to select the solution that appears most frequently in the solution list, improve the selection to enhance the choice of the best solution.",
+        "interface": "sc_ensemble(solutions: List[str], problem: str) -> dict with key 'response' of type str"
+    },
+    "Programmer": {
+        "description": "Automatically writes, executes Python code, and returns the solution based on the provided problem description and analysis. The `output` only contains the final answer. If you want to see the detailed solution process, it's recommended to retrieve the `code`.",
+        "interface": "programmer(problem: str, analysis: str = 'None') -> dict with keys 'code' and 'output' of type str"
+    },
+    "DocumentInlining": {
+        "description": "Uses the document inlining technique to extract information from a document and generate content based on the extracted data and the provided instruction. If no document bytes are provided, it defaults to simple text-based generation. Tips: if answer is not ideal, try split the document into smaller parts and try again.",
+        "interface": "document_inlining(instruction: str, document_bytes: Optional[bytes] = None) -> dict with key 'response' of type str"
+    },
+    "PDFSummary": {
+        "description": "Returns a dictionary including basic information of the PDF file. For now, it only includes the number of pages in the PDF file.",
+        "interface": "pdf_summary(pdf_file_path: str) -> dict with keys 'num_pages' of type int"
+    },
+    "PDFPageExtraction": {
+        "description": "Extract designated pages from a PDF document, and the output is the pdf file bytes of extracted pages. It can be utilized to extract specific pages from a PDF document.",
+        "interface": "pdf_page_extraction(pdf_file_path: str, page_numbers: List[int]) -> bytes"
+    },
+    "ReceiptRecognitionResultFormatting": {
+        "description": "Extract and group valid receipt or invoice page indices from the recognition result into a JSON array, preserving the original page groupings and input order. Entries are filtered based on category or metadata indicators, ensuring only receipts/invoices are included.",
+        "interface": "receipt_recognition_result_format(recognition_result: Dict) -> List[List[int]]"
+    },
+    "JSONExtraction": {
+        "description": "Extract a JSON object from a LLM response.",
+        "interface": "json_extraction(response: str) -> dict"
+    }
+}

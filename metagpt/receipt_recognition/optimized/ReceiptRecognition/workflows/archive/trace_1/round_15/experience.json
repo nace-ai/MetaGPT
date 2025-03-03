@@ -1,0 +1,7 @@
+{
+    "father node": 1,
+    "modification": "1. Add robust pre-processing using a specialized page classifier to improve receipt detection\n2. Implement better receipt continuity detection by analyzing page content relationships\n3. Add post-processing to filter out empty lists and non-receipt pages\n4. Add confidence scoring for more reliable receipt identification\n5. Enhance receipt metadata extraction for improved validation\n6. Introduce a page content validation step to confirm receipt authenticity\n7. Implement a dedicated cleanup step for the final output to ensure proper formatting\n8. Improve the prompt with more specific indicators for receipt identification\n9. Utilize the ReceiptRecognitionResultFormatting operator for final output processing\n10. Add processing for PDF metadata to identify receipt page patterns",
+    "before": 0.03529411764705882,
+    "after": 0.0,
+    "succeed": false
+}

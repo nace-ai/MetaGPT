@@ -35,8 +35,8 @@ class BaseBenchmark(ABC):
 
     def save_results_to_csv(self, results: List[Tuple[Any, ...]], columns: List[str]):
         df = pd.DataFrame(results, columns=columns)
-        avg_score = df["score"].mean()
-        t_cost = df["cost"].max()
+        avg_score = df["score"].astype(float).mean()
+        t_cost = df["cost"].astype(float).sum()
         a_cost = t_cost / len(df) if len(df) > 0 else 0
         current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"{avg_score:.5f}_{current_time}.csv"

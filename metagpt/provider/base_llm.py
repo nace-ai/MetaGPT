@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import json
 from abc import ABC, abstractmethod
-from typing import Optional, Union
+from typing import Optional, Union, List, Dict
 
 from openai import AsyncOpenAI
 from pydantic import BaseModel
@@ -42,6 +42,9 @@ class BaseLLM(ABC):
     cost_manager: Optional[CostManager] = None
     model: Optional[str] = None  # deprecated
     pricing_plan: Optional[str] = None
+    
+    # Memory
+    memory: List[Dict] = []
 
     @abstractmethod
     def __init__(self, config: LLMConfig):
@@ -63,7 +66,7 @@ class BaseLLM(ABC):
         content = [{"type": "text", "text": msg}]
         for image in images:
             # image url or image base64
-            url = image if image.startswith("http") else f"data:image/jpeg;base64,{image}"
+            url = image if image.startswith("http") or image.startswith("data:application/pdf;base64") else f"data:image/jpeg;base64,{image}"
             # it can with multiple-image inputs
             content.append({"type": "image_url", "image_url": {"url": url}})
         return {"role": "user", "content": content}
@@ -150,6 +153,8 @@ class BaseLLM(ABC):
             stream = self.config.stream
         logger.debug(message)
         rsp = await self.acompletion_text(message, stream=stream, timeout=self.get_timeout(timeout))
+        message.append(self._assistant_msg(rsp))
+        self.memory.append(message)
         return rsp
 
     def _extract_assistant_rsp(self, context):

@@ -1,0 +1,72 @@
+[
+    {
+        "round": 1,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T11:26:19.731232"
+    },
+    {
+        "round": 1,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T11:39:34.362769"
+    },
+    {
+        "round": 1,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T11:46:55.211961"
+    },
+    {
+        "round": 1,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T11:59:13.625454"
+    },
+    {
+        "round": 1,
+        "score": 0.058823529411764705,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T12:10:44.633803"
+    },
+    {
+        "round": 2,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T12:26:34.290662"
+    },
+    {
+        "round": 2,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T12:40:41.795545"
+    },
+    {
+        "round": 2,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T12:53:47.873940"
+    },
+    {
+        "round": 2,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T13:06:08.863610"
+    },
+    {
+        "round": 2,
+        "score": 0.0,
+        "avg_cost": 0.0,
+        "total_cost": 0.0,
+        "time": "2025-03-02T13:23:04.803503"
+    }
+]

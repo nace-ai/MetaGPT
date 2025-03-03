@@ -1,0 +1,58 @@
+[
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Dominic_Miceli_R006cEkXKTXJ_2023_08_29.pdf",
+        "right_answer": "[[7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Anthony_Fulco_R000r1GU5GZQ_2024_06_01.pdf",
+        "right_answer": "[[7, 8, 9], [10, 11], [12], [13, 14, 15, 16], [17], [18, 19], [20, 21, 22, 23], [24, 25, 26, 27], [28, 29, 30], [31], [32], [33], [34], [35], [36], [37], [38], [39], [40], [41], [42], [43]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Dominic_Miceli_R006cEkXKTXJ_2023_08_29.pdf",
+        "right_answer": "[[7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Dominic_Miceli_R00Ib9ORoaN2_2024_05_18.pdf",
+        "right_answer": "[[6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18, 19], [20], [21]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Dominic_Miceli_R005VoqYE70q_2024_07_27.pdf",
+        "right_answer": "[[7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [24]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Dominic_Miceli_R006cEkXKTXJ_2023_08_29.pdf",
+        "right_answer": "[[7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Anthony_Fulco_R000r1GU5GZQ_2024_06_01.pdf",
+        "right_answer": "[[7, 8, 9], [10, 11], [12], [13, 14, 15, 16], [17], [18, 19], [20, 21, 22, 23], [24, 25, 26, 27], [28, 29, 30], [31], [32], [33], [34], [35], [36], [37], [38], [39], [40], [41], [42], [43]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "metagpt/receipt_recognition/data/expense_reports/Charla_Rhoderick_R00WQIxAcQTT_2024_06_28.pdf",
+        "right_answer": "[[6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21]]",
+        "model_output": "[]",
+        "extracted_output": "[]",
+        "extract_answer_code": "None"
+    }
+]

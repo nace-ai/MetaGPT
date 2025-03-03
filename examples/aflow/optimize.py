@@ -10,7 +10,6 @@ from metagpt.configs.models_config import ModelsConfig
 from metagpt.ext.aflow.data.download_data import download
 from metagpt.ext.aflow.scripts.optimizer import Optimizer
 
-
 class ExperimentConfig:
     def __init__(self, dataset: str, question_type: str, operators: List[str]):
         self.dataset = dataset
@@ -81,7 +80,7 @@ def parse_args():
     parser.add_argument(
         "--opt_model_name",
         type=str,
-        default="claude-3-5-sonnet-20240620",
+        default="claude-3-7-sonnet-20250219",
         help="Specifies the name of the model used for optimization tasks.",
     )
     parser.add_argument(
@@ -99,6 +98,7 @@ if __name__ == "__main__":
     config = EXPERIMENT_CONFIGS[args.dataset]
 
     models_config = ModelsConfig.default()
+    # print(models_config)
     opt_llm_config = models_config.get(args.opt_model_name)
     if opt_llm_config is None:
         raise ValueError(
@@ -114,7 +114,7 @@ if __name__ == "__main__":
         )
 
     download(["datasets", "initial_rounds"], if_first_download=args.if_first_optimize)
-
+    print(config)
     optimizer = Optimizer(
         dataset=config.dataset,
         question_type=config.question_type,
